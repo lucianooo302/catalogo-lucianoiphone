@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- META TAG OG -->
+  <meta property="og:type" content="lucianoiphone"/>
+  <meta property="og:title" content="LUCIANO IPHONE - O NUMERO 1"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:description" content="!" />
+  <meta property="og:site_name" content="PREÇO, QUALIDADE E GARANTIA" />
+
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <title></title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="w-990 h-[450px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+     
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white bg-black  px-2 py-0 rounded-lg mt-5 ">
+        LUCIANO IPHONE
+      </h1>
+
+      
+
+      <div class="bg-green-600 px-2 py-0 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á sabado - 9:00 as 18:00</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Botão de três pontinhos fixo no canto superior esquerdo com texto "Menu" e bordas arredondadas -->
+  <div class="fixed top-5 left-5 z-50">
+    <button id="menu-toggle" class="text-black text-3xl focus:outline-none flex items-center space-x-2 bg-black p-2 rounded-lg shadow-lg">
+      <span class="text-xl text-white">&#x22EE;</span> <!-- Símbolo de três pontinhos -->
+      <span class="text-lg text-white">CATEGORIAS</span> <!-- Texto "Menu" -->
+    </button>
+  </div>
+
+  <!-- Menu de categorias escondido inicialmente com bordas arredondadas -->
+  <nav id="menu-categories" class="hidden fixed top-12 left-5 bg-gray-800 p-4 rounded-lg shadow-lg z-40">
+    <ul class="space-y-2 text-white font-bold text-sm">
+      <li><a href="#camisetas" class="category-link hover:text-gray-400">IPHONES SEMINOVOS</a></li>
+      <li><a href="#camisas-oversized" class="category-link hover:text-gray-400">LACRADO</a></li>
+
+     
+    </ul>
+  </nav>
+
+  <!-- FIM HEADER -->
+   
+
+
+  <h2 class="text-2xl md:text-3xl font-bold mt-9 mb-6 bg-black text-white px-4 py-1 rounded-lg mt-5" id="camisetas">
+    IPHONE SEMONOVOS
+
+  </h2>
+
+  <!-- INICIO MENU -->
+  <div id="menu">
+    
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      
+      <!-- PRODUTO ITEM IPHONE 11 -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/11 semi.png"
+          alt="CAMISA STREETWEAR"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/11 semi.png" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 11 64GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">❤️VERMELHO </p>
+          <p class="text-sm">💛AMARELO</p>
+          <p class="text-sm">💚VERDE</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2.050</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 11 64GB "
+              data-price="2050"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+       
+      <!-- PRODUTO ITEM IPHONE 11 -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/11 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/11 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 11 128GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">❤️VERMELHO </p>
+          <p class="text-sm">💛AMARELO</p>
+          <p class="text-sm">💚VERDE</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2.170</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 11 128GB "
+              data-price="2170"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+        <!-- PRODUTO ITEM IPHONE 12 -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/12 64.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/12 64.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 12 64GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">❤️VERMELHO </p>
+          <p class="text-sm">💜LILAS</p>
+          <p class="text-sm">💚VERDE</p>
+          <p class="text-sm">💙AZUL</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2320</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 12 64GB "
+              data-price="2320"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+        
+        <!-- PRODUTO ITEM IPHONE 12 -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/12 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/12 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 12 128GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">❤️VERMELHO </p>
+          <p class="text-sm">💚VERDE</p>
+          <p class="text-sm">💙AZUL</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2550</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 12 128GB "
+              data-price="2550"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+         <!-- PRODUTO ITEM IPHONE 12 PRO -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/12 PRO 128GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/12 PRO 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 12 PRO 128GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💛GOLD</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 2.850</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 12 PRO 128GB "
+              data-price="2850"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+        <!-- PRODUTO ITEM IPHONE 12 PRO MAX-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/12 PRO MAX 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/12 PRO MAX 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 12 PRO MAX 128GB </p>
+          <p class="text-sm">🤍 BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💛GOLD</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 3.372</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 12 PRO MAX 128GB "
+              data-price="3372"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM IPHONE 13-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/13 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/13 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 13 128GB </p>
+          <p class="text-sm">   ROSA</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💚VERDE</p>
+          <p class="text-sm">❤️VERMELHO</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 3.120</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 13 128GB "
+              data-price="3120"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+        <!-- PRODUTO ITEM IPHONE 13-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/13 256GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/13 256GB.jpeg " <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 13 256GB </p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">❤️VERMELHO</p>
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 3.250</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 13 256GB "
+              data-price="3250"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM IPHONE 13 PRO-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/13 PRO 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/13 PRO 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 13 PRO 128GB </p>
+          <p class="text-sm">🤍BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💚VERDE</p>
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 4.150</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 13 PRO 128GB "
+              data-price="4150"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM IPHONE 13 PRO MAX-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/13 PRO MAX 128GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/13 PRO MAX 128GB.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 13 PRO MAX 128GB </p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💚VERDE</p>
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 4.372</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 13 PRO MAX 128GB "
+              data-price="4372"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+       
+      
+      <!-- PRODUTO ITEM IPHONE 13 PRO MAX-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/13 PRO MAX 256GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/13 PRO MAX 256GB.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 13 PRO MAX 256GB </p>
+          <p class="text-sm">🤍BRANCO</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💚VERDE</p>
+          <p class="text-sm">💛GOLD</p>
+          <p class="text-sm">🤍BRANCO</p>
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 4.499</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 13 PRO MAX 256GB "
+              data-price="4499"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM IPHONE 14-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/14 128GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/14 128GB.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 14 128GB</p>
+          <p class="text-sm">💜ROXO</p>
+          <p class="text-sm">❤️VERMELHO</p>
+          <p class="text-sm">💙AZUL</p>
+          <p class="text-sm">💛AMARELO</p>
+          
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 3.550</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 14 128GB "
+              data-price="3550"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+       <!-- PRODUTO ITEM IPHONE 14 PRO-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/14 PRO 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/14 PRO 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 14 PRO 128GB</p>
+          <p class="text-sm">💛GOLD</p>
+          
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 4.799</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 14 PRO 128GB "
+              data-price="4799"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+      <!-- PRODUTO ITEM IPHONE 14 PRO MAX -->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/14 PRO MAX 128.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/14 PRO MAX 128.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 14 PRO MAX 128GB</p>
+          <p class="text-sm">💛GOLD</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">💜ROXO</p>
+          <p class="text-sm">🤍BRANCO</p>
+          
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 5.450</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 14 PRO 128GB "
+              data-price="5450"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+       <!-- PRODUTO ITEM IPHONE 15 PRO  -->
+       <div class="flex gap-2">
+        <img 
+          src="./assets/15 PRO 256GB.jpeg"
+          alt="iphone"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+          data-image="./assets/15 PRO 256GB.jpeg" <!-- Adicione esta linha -->
+        
+
+        <div>
+          <p class="font-bold">IPHONE 15 PRO 256GB</p>
+          <p class="text-sm">💙 Azul</p>
+          <p class="text-sm">🖤PRETO</p>
+          <p class="text-sm">🤍BRANCO</p>
+          
+        
+
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 6.130</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="IPHONE 14 PRO 128GB "
+              data-price="6130"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->  
+
+        <!-- PRODUTO ITEM IPHONE 15 PRO MAX -->
+        <div class="flex gap-2">
+          <img 
+            src="./assets/15 PRO MAX 256GB.jpeg"
+            alt="iphone"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+            data-image="./assets/15 PRO MAX 256GB.jpeg" <!-- Adicione esta linha -->
+          
+  
+          <div>
+            <p class="font-bold">IPHONE 15 PRO MAX 256GB</p>
+            <p class="text-sm">💙 Azul</p>
+            <p class="text-sm">🖤PRETO</p>
+            
+          
+  
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.499</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="IPHONE 15 PRO MAX 256GB "
+                data-price="6499"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->  
+         
+      
+
+    </main>
+    
+    <!-- NOVA SEÇÃO: CAMISA OVERSIZED -->
+    <h2 class="text-2xl md:text-3xl font-bold mt-9 mb-6 bg-black text-white px-4 py-1 rounded-lg mt-5" id="camisas-oversized">
+      LACRADO 1 ANO DE GARANTIA
+    </h2>
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      
+        <!-- PRODUTO ITEM IPHONE 16 PRO MAX LACRADO-->
+        <div class="flex gap-2">
+          <img 
+            src="./assets/16 PRO MAX 256GB.jpeg"
+            alt="iphone"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+            data-image="./assets/16 PRO MAX 256GB.jpeg" <!-- Adicione esta linha -->
+          
+  
+          <div>
+            <p class="font-bold">IPHONE 16 PRO MAX LACRADO 256GB</p>
+            <p class="text-sm">titanium</p>
+            <p class="text-sm">🖤PRETO</p>
+            
+          
+  
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10.550</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="IPHONE 16 PRO MAX LACRADO 256GB "
+                data-price="10550"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->  
+
+         <!-- PRODUTO ITEM IPHONE 15 PRO MAX LACRADO-->
+         <div class="flex gap-2">
+          <img 
+            src="./assets/15 PRO MAX LACRADO 256GB.jpeg"
+            alt="iphone"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+            data-image="./assets/15 PRO MAX LACRADO 256GB.jpeg" <!-- Adicione esta linha -->
+          
+  
+          <div>
+            <p class="font-bold">IPHONE 15 PRO MAX LACRADO 256GB</p>
+            <p class="text-sm">Natural</p>
+            <p class="text-sm">💙AZUL</p>
+            <p class="text-sm">🤍BRANCO</p>
+            <p class="text-sm">🖤PRETO</p>
+          
+  
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.870</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="IPHONE 15 PRO MAX LACRADO 256GB "
+                data-price="6870"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->  
+
+         <!-- PRODUTO ITEM IPHONE 12 PRO MAX LACRADO-->
+         <div class="flex gap-2">
+          <img 
+            src="./assets/12 PRO MAX LACRADO 128GB.jpeg"
+            alt="iphone"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 product-image"
+            data-image="./assets/12 PRO MAX LACRADO 128GB.jpeg" <!-- Adicione esta linha -->
+          
+  
+          <div>
+            <p class="font-bold">IPHONE 12 PRO MAX LACRADO 128GB</p>
+            <p class="text-sm">Grafite</p>
+            <p class="text-sm">Silver</p>
+            
+          
+  
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 4.100</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="IPHONE 12 PRO MAX LACRADO 128GB "
+                data-price="4100"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->  
+
+        
+      
+    
+    </main>
+    
+
+    </main>
+      
+
+    </main>
+
+  </div>
+  <!-- FIM MENU -->
+
+  <!-- MODAL IMAGEM DO PRODUTO -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-4 rounded shadow-lg relative">
+      <span class="absolute top-2 right-2 cursor-pointer" id="close-modal">&times;</span>
+      <img id="modal-image" src="" alt="Imagem do Produto" class="w-80 h-90 object-cover" />
+    </div>
+  </div>
+
+   
+
+<!-- MODAL CART -->
+<div 
+class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+id="cart-modal"
+>
+
+<div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+  <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+  <div id="cart-items" class="flex justify-between mb-2 flex-col max-h-[400px] overflow-auto"></div>
+
+  <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+  <p class="font-bold mt-4">cor do iphone:</p>
+  <input 
+    type="text"
+    placeholder="Digite a cor do iphone..."
+    id="address"
+    class="w-full border-2 p-1 rounded my-1"
+  />
+  <p class="text-red-500 hidden" id="address-warn">Digite a cor do iphone!</p>
+
+  <div class="flex items-center justify-between mt-5 w-full">
+    <button id="close-modal-btn">Fechar</button>
+    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+  </div>
+
+</div>
+
+</div>
+
+
+<!-- FIM MODAL CART -->
+
+<!-- BUTTON CART FOOTER -->
+  <!-- Script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+    // Notificação ao adicionar produto ao carrinho
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productName = button.getAttribute('data-name');
+        const productPrice = button.getAttribute('data-price');
+
+        Toastify({
+          text: `${productName} adicionado ao carrinho! Preço: R$ ${productPrice}`,
+          duration: 3000,
+          gravity: "top",
+          position: 'right',
+          backgroundColor: "#4CAF50",
+        }).showToast();
+      });
+    });
+  </script>
+<footer class="w-full bg-black py-3 fixed bottom-0 z-40 flex items-center justify-center">
+<button 
+  class="flex items-center gap-2 text-white font-bold"
+  id="cart-btn"
+>
+  (<span id="cart-count">0</span>)
+  Meu carrinho
+  <i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</footer>
+
+
+
+
+<!-- FIM BUTTON CART FOOTER -->
+ 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+</body>
+</html>
